@@ -581,8 +581,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846667807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 061202a09d98ba640be1c67770e57cbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b6dcb76363eb834aa181d0f7da3a449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curShader: {fileID: 4800000, guid: 67a0e4a2951e6db4a98e0bfd1a319f0a, type: 3}
-  grayScaleAmount: 0
+  oldFilmShader: {fileID: 4800000, guid: 962b35863b8c6264293e7a783d868dd7, type: 3}
+  OldFilmEffectAmount: .25999999
+  contrast: 3
+  distortion: .200000003
+  cubicDistortion: .600000024
+  scale: .800000012
+  sepiaColor: {r: 1, g: 1, b: 1, a: 1}
+  vignetteTexture: {fileID: 2800000, guid: 0002e43a15da866428a42a65bae797b9, type: 3}
+  vignetteAmount: 1
+  scratchesTexture: {fileID: 2800000, guid: c5837d670fb44ba489226dd9c05061fa, type: 3}
+  scratchesYSpeed: 10
+  scratchesXSpeed: 10
+  dustTexture: {fileID: 2800000, guid: 28a38a377a5cea0448f819d5d7f37c09, type: 3}
+  dustYSpeed: 10
+  dustXSpeed: 10
