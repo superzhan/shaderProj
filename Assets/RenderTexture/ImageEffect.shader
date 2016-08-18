@@ -3,6 +3,7 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+		_LuminosityAmount("GrayScale Amount ", Range(0 ,1 )) = 1.0
 	}
 	SubShader
 	{
@@ -14,6 +15,7 @@
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
+			//#pragma fragmentoption ARB_precision_hint_fastest
 			
 			#include "UnityCG.cginc"
 
@@ -38,13 +40,18 @@
 			}
 			
 			sampler2D _MainTex;
+			fixed _LuminosityAmount;
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				fixed4 col = tex2D(_MainTex, i.uv);
-				// just invert the colors
-				col = 1 - col;
-				return col;
+				fixed4 renderTex = tex2D(_MainTex, i.uv);
+			    
+			   //灰度图片的转换方式
+			    float luminosity = 0.299 * renderTex.r + 0.587 * renderTex.g +0.114* renderTex.b;
+			    // luminosity will auto change to fixed4
+			    fixed4 finalColor = lerp(renderTex,luminosity,_LuminosityAmount);
+		
+				return finalColor;
 			}
 			ENDCG
 		}

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: surfaceMat
-  m_Shader: {fileID: 4800000, guid: 94754916f4a28fa408561e22c9bd0c7b, type: 3}
+  m_Shader: {fileID: 4800000, guid: 582d46856b3ed584595173556bca01a9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 74f850c76b101458c9580e31fddf3b79, type: 3}
+          m_Texture: {fileID: 2800000, guid: 018f8e5891915de4ca15bc114e7ce9f8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -141,11 +141,27 @@ Material:
       data:
         first:
           name: _OutlineSize
-        second: .0299999993
+        second: .0500000007
       data:
         first:
           name: _Amount
         second: .00999999978
+      data:
+        first:
+          name: _tintAmount
+        second: 1
+      data:
+        first:
+          name: _Speed
+        second: 80
+      data:
+        first:
+          name: _Frequency
+        second: 4.90999985
+      data:
+        first:
+          name: _Amplitude
+        second: .0799999982
     m_Colors:
       data:
         first:
@@ -154,8 +170,20 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .211659625, g: .816176474, b: .162035048, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _OutlineColor
-        second: {r: .6965518, g: 1, b: 0, a: .746999979}
+        second: {r: .6965518, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _MainTint
+        second: {r: .772058845, g: .647166967, b: .647166967, a: 1}
+      data:
+        first:
+          name: _ColorA
+        second: {r: .992647052, g: .992647052, b: .992647052, a: 1}
+      data:
+        first:
+          name: _ColorB
+        second: {r: 1, g: 1, b: 1, a: 1}
