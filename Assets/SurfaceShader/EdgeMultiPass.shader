@@ -1,4 +1,6 @@
-﻿Shader "Surface_Example/EdgeMultiPass" {
+﻿
+//描边
+Shader "Surface_Example/EdgeMultiPass" {
 	
 	 Properties {
     _MainTex ("Albedo (RGB)", 2D) = "white" {}

@@ -1,4 +1,5 @@
-﻿Shader "Surface_Example/Rim" {
+﻿//边缘发光
+Shader "Surface_Example/Rim" {
 	
 	 Properties {
     _MainTex ("Albedo (RGB)", 2D) = "white" {}
